@@ -27,19 +27,19 @@ interface Issue {
   urgency: string;
 }
 
-// Example issue data
+// Example issue data (Indore-based)
 const mapIssues: Issue[] = [
   {
     id: 1,
-    title: "Pothole at Times Square",
-    coordinates: { lat: 40.7589, lng: -73.9851 },
+    title: "Pothole at Rajwada",
+    coordinates: { lat: 22.7196, lng: 75.8577 },
     status: "Open",
     urgency: "High",
   },
   {
     id: 2,
-    title: "Broken streetlight at Central Park",
-    coordinates: { lat: 40.7829, lng: -73.9654 },
+    title: "Broken streetlight near Vijay Nagar",
+    coordinates: { lat: 22.7536, lng: 75.8937 },
     status: "In Progress",
     urgency: "Medium",
   },
@@ -53,7 +53,7 @@ const InteractiveMap = () => {
       <Card>
         <CardContent className="p-0 relative">
           <MapContainer
-            center={[40.7589, -73.9851]}
+            center={[22.7196, 75.8577]} // Indore as default center
             zoom={13}
             scrollWheelZoom={true}
             style={{ height: "500px", width: "100%" }}
